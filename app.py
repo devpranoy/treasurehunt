@@ -111,16 +111,19 @@ def level9():
 def hidden_image_text():
     return render_template("hidden_image_text.html")
 
-@app.route('/wedwedweefe000323o0mlil0oik', methods=['GET','POST']) #landing page
+@app.route('/7f83b1657ff1fc53b92dc18148a1d65dfc2d4b1fa3d677284addd200126d9069', methods=['GET','POST']) #landing page
 def level10():
     if request.method=="POST":
         password = request.form['password']
         password = str(password)
-        print(password)
         
-        if password == "buhahahahahahXD":
+        if password == "Hello World!":
             return redirect(url_for('finish'))
     return render_template("10.html")
+
+@app.route('/7f83b1jfi26d9069', methods=['GET','POST']) #landing page
+def finish():
+   return render_template("finish.html")
 
 if __name__=='__main__':
 
